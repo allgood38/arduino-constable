@@ -54,7 +54,7 @@ cons_poll_line( cons_line* cline, uint32_t timeout )
 
         time = millis();
     }
-    
+
     return CONSHELL_LINE_TIMEOUT;
 }
 
@@ -120,9 +120,9 @@ cons_search_exec( cons_line* cline, cmdlist* cmds )
 
     func = (conshfunc) cons_exec_cmd( cmds, args->entry[0] );
 
-    if( func != NULL ) 
+    if( func != NULL )
         returncode = func( args );
-    else 
+    else
         returncode = CONSHELL_FUNCTION_NOT_FOUND;
 
     bstrListDestroy( args );

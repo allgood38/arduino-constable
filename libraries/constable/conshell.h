@@ -3,10 +3,6 @@
 
 #include <Arduino.h>
 #include <bstrlib.h>
-#include <memoryget.h>
-
-// Assume the project has a pins definition
-//#include <pins.h>
 
 #include "constable.h"
 

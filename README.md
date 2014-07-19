@@ -1,5 +1,14 @@
+# Constable
 
-# How to use constable command line functions
+Constable is a library with a couple data structures and associated functions
+that allow you to register small functions that are called with arguments when
+you type them in to a prompt on the Arduino's Serial console.
+
+You place function that needs to be called often to check to see if there is
+new serial data, and then call another function to process it when it shows
+that the user pressed enter.
+
+### How to use constable command line functions
 
 Constable is a really simple shell that lets you type in the name of a
 function at the serial line, and have it execute immediately. Making a new
